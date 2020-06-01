@@ -33,10 +33,6 @@ public abstract class WordCounter {
 
     private static int allSides(char[][] matrix, char[] word, int[] startPos) {
         int result = 0;
-//        System.out.println("right: " + right(matrix, word, startPos));
-//        System.out.println("left: " + left(matrix, word, startPos));
-//        System.out.println("top: " + top(matrix, word, startPos));
-//        System.out.println("bottom: " + bottom(matrix, word, startPos));
         result += right(matrix, word, startPos);
         result += left(matrix, word, startPos);
         result += top(matrix, word, startPos);
